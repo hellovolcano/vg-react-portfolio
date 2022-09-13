@@ -1,9 +1,14 @@
 import './App.css';
 import Header from '../src/components/Header'
+import Project from '../src/components/Project'
 
 function App() {
   return (
-    <Header />
+    <div>
+      <Header />
+      <Project />
+    </div>
+    
   );
 }
 
