@@ -1,5 +1,4 @@
 import React from 'react'
-import Box from '@mui/material/Box'
 
 const Project = () => {
     const projects = [
@@ -13,13 +12,7 @@ const Project = () => {
     ]
 
     return (
-        // Wrapping each project in a box? Maybe
-        <Box sx={{
-            width: 4/5,
-            boxShadow: 1,
-            mx: "auto"
-        }
-        }>
+        <section>
                 <img alt="screenshot of project" />
                 <div>
                 <h2>{projects[0].name}</h2>
@@ -29,8 +22,7 @@ const Project = () => {
                     <a href={projects[0].deployedUrl} target="_blank" rel="noreferrer">Deployed</a>
                 </div>
                 </div>
-        </Box>
-
+        </section>
     )
 }
 

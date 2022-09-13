@@ -1,13 +1,67 @@
-body {
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+:root {
+  --primary-color: #303b47;
+  --secondary-color: #66454f;
+  --highlight: #666445;
+  --white: antiquewhite;
+}
+
+/* Navigation Styles */
+nav {
+  display: flex;
+  justify-content: flex-start;
+  color: var(--white);
+  background-position: 80%;
+  background-size: cover;
+  background-attachment: fixed;
+  padding-top: 15px;
+}
+
+nav ul {
+  margin: 10px 0 10px 20px;
+}
+
+nav ul li {
+  display: inline;
+  list-style-type: none;
+  flex-basis: 200px;
+  padding: 15px 20px;
+  opacity: 100%;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: var(--white);
+  opacity: 100%;
+  padding: 10px;
+}
+
+nav ul li a:hover {
+  color: var(--white); 
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  animation-name: fadein;
+}
+
+@keyframes fadein {
+  from {
+      background-color: "";
+  }
+
+  to {
+      background-color: var(--highlight);
+      border-top-right-radius: 15px;
+      border-bottom-left-radius: 15px;
+  }
+}
+
+
+.deleteMe {
+  background-color: var(--highlight);
+  color: var(--white);
+  padding: 30px;
 }
