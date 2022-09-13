@@ -6,7 +6,9 @@ import Stack from '@mui/material/Stack'
 
 const ContactForm = () => {
     return(
-        <Stack 
+        <section>
+            <h2>Contact Me</h2>
+            <Stack 
             component="form" 
             spacing={2} 
             sx={{
@@ -16,10 +18,12 @@ const ContactForm = () => {
                 <TextField id="name" label="Name" variant="outlined" />
                 <TextField id="email" label="Email" variant="outlined" />
                 <TextField id="message" label="Message" variant="outlined" multiline rows={4} />
-                <Button variant="contained">
-                    Submit  <SendIcon />
+                <Button variant="outlined">
+                    Submit  &nbsp;&nbsp;<SendIcon />
                 </Button>
         </Stack>
+        </section>
+        
         
         
     )

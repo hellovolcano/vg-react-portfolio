@@ -1,33 +1,32 @@
 import React from 'react'
 import Box from '@mui/material/Box'
 
-const Project = () => {
-    const projects = [
-        {
-            name: 'Track Stream',
-            githubUrl: 'https://github.com/hellovolcano/streaming-service-tracker',
-            deployedUrl: 'https://shielded-thicket-83954.herokuapp.com/',
-            description: 'Track Stream\'s purpose is to keep you notified of all the video streaming services you are subscribed too. The application will give you a visual reminder of how much you\'re spending on streaming services and when the renewal period starts again.',
-            technologies: ['MySQL','JavaScript','ExpressJS','HTML5','CSS3']
-        }
-    ]
+const Project = ({projectItem}) => {
+    const {name, githubUrl, deployedUrl, description, technologies, imgName} = projectItem
 
     return (
         // Wrapping each project in a box? Maybe
         <Box sx={{
-            width: 4/5,
-            boxShadow: 1,
-            mx: "auto"
+            boxShadow: 2,
         }
         }>
-                <img alt="screenshot of project" />
-                <div>
-                <h2>{projects[0].name}</h2>
-                <p>{projects[0].description}</p>
-                <div>
-                    <a href={projects[0].githubUrl} target="_blank" rel="noreferrer">GitHub</a>
-                    <a href={projects[0].deployedUrl} target="_blank" rel="noreferrer">Deployed</a>
-                </div>
+                <img className="portfolio-img" src={require(`../../assets/images/${imgName}`)} alt="screenshot of project" />
+                <div className="project-wrapper">
+                    <h2>{name}</h2>
+                    <p>{description}</p>
+                    <div>
+                        <a href={githubUrl} target="_blank" rel="noreferrer">GitHub</a>
+                        <a href={deployedUrl} target="_blank" rel="noreferrer">Deployed</a>
+                    </div>
+                    {/* Map through the technologies used */}
+                        <ul className="tech-ul">
+                            {technologies.map((tech) => (
+                                <li className="tech-li">{tech}</li>
+                            ))}
+                        </ul>
+                    <div>
+
+                    </div>
                 </div>
         </Box>
 

@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC&family=Poppins:wght@100;300&display=swap');
+
 * {
   margin: 0;
   padding: 0;
@@ -9,6 +11,39 @@
   --highlight: #666445;
   --white: antiquewhite;
 }
+
+body {
+  font-family: 'Poppins', sans-serif;
+  width: 100%;
+}
+
+/* Generic Heading Styles */
+h1, h2, h3 {
+  font-family: 'Amatic SC', sans-serif;
+}
+
+h2 {
+  font-size: 48px;
+}
+
+h3 {
+  font-size: 36px;
+}
+
+/* Header Styles */
+header {
+  background-image: 
+  linear-gradient(to right, rgba(0,0,0,.9), rgba(255,255,255,0)),
+  url("./assets/images/bailey-anselme-eN5axbs60Po-unsplash.jpg");
+  background-attachment: fixed;
+  background-position: 80%;
+  color: var(--white);
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 25px;
+}
+
 
 /* Navigation Styles */
 nav {
@@ -59,9 +94,25 @@ nav ul li a:hover {
   }
 }
 
+/* Portfolio Component Styles */
+.portfolio-img {
+  width: 100%;
+}
 
-.deleteMe {
-  background-color: var(--highlight);
-  color: var(--white);
-  padding: 30px;
+/* Project Component Styles */
+.project-wrapper {
+  padding: 3px 5px;
+  margin-top: 4px;
+}
+
+.tech-li {
+  display: inline;
+  list-style-type: none;
+  flex-basis: 200px;
+  padding: 15px 20px;
+}
+
+/* Contact Form */
+button {
+  font-family: 'Amatic SC', sans-serif;
 }
