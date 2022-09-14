@@ -3,10 +3,14 @@ import Button from '@mui/material/Button'
 import TextField from '@mui/material/TextField'
 import SendIcon from '@mui/icons-material/Send'
 import Stack from '@mui/material/Stack'
+import { GlobalStyles } from '@mui/material'
 
 const ContactForm = () => {
     return(
         <section>
+
+            <GlobalStyles styles={{ button: { fontFamily: 'Amatic SC' } }} />
+
             <h2>Contact Me</h2>
             <Stack 
             component="form" 

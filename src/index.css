@@ -1,9 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Amatic+SC&family=Poppins:wght@100;300&display=swap');
 
-* {
-  margin: 0;
-  padding: 0;
-}
 
 :root {
   --primary-color: #303b47;
@@ -15,6 +11,8 @@
 body {
   font-family: 'Poppins', sans-serif;
   width: 100%;
+  margin: 0;
+  padding: 0;
 }
 
 /* Generic Heading Styles */
@@ -41,6 +39,7 @@ header {
   width: 100%;
   display: flex;
   justify-content: space-between;
+  flex-direction: column;
   padding: 15px 25px;
 }
 
@@ -94,6 +93,18 @@ nav ul li a:hover {
   }
 }
 
+.active {
+  background-color: var(--secondary-color);
+  border-top-right-radius: 15px;
+  border-bottom-left-radius: 15px;
+}
+
+/* main content section styles */
+.main-content-wrapper {
+  padding-top: 25px;
+}
+
+
 /* Portfolio Component Styles */
 .portfolio-img {
   width: 100%;
@@ -105,14 +116,27 @@ nav ul li a:hover {
   margin-top: 4px;
 }
 
+.tech-ul {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0px;
+}
+
 .tech-li {
   display: inline;
   list-style-type: none;
-  flex-basis: 200px;
-  padding: 15px 20px;
+  /* flex-basis: 100px; */
+  padding: 5px 8px;
+
 }
 
 /* Contact Form */
 button {
   font-family: 'Amatic SC', sans-serif;
+}
+
+@media screen and (min-width: 850px) {
+  header {
+    flex-direction: row;
+  }
 }

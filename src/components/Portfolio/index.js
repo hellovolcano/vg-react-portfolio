@@ -23,21 +23,18 @@ const Portfolio = () => {
     ])
 
     return (
-        <Grid container spacing={2}>
+        <section>
+            <h2>Portfolio</h2>
+            <Grid container spacing={2}>
             {projects.map((project) => (
                 <Grid xs={12} sm={12} md={6} lg={4}>
                     <Project projectItem={project} />
                 </Grid>
             )
             )}
-
-            {/* 
-                <div className="deleteMe">A Project</div>
-            </Grid>
-            <Grid xs={12} sm={6} md={4}>
-                <div className="deleteMe">A Project</div>
-            </Grid> */}
         </Grid>
+        </section>
+        
     )
 }
 
