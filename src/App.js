@@ -10,16 +10,19 @@ import Footer from '../src/components/Footer'
 function App() {
   return (
     <div>
-      <Header />
-      <div className="main-content-wrapper">
-          <Routes>
-            <Route path="/" element={<About />} />
-            <Route path="about" element={<About />} />
-            <Route path="portfolio" element={<Portfolio />} />
-            <Route path="resume" element={<Resume />} />
-            <Route path="contact" element={<ContactForm />} />
-          </Routes>
-        
+      {/* Adding one more wrapper to help push the footer */}
+      <div className="body-wrapper">
+        <Header />
+        <div className="main-content-wrapper">
+            <Routes>
+              <Route path="/" element={<About />} />
+              <Route path="about" element={<About />} />
+              <Route path="portfolio" element={<Portfolio />} />
+              <Route path="resume" element={<Resume />} />
+              <Route path="contact" element={<ContactForm />} />
+            </Routes>
+          
+        </div>
       </div>
       <Footer />
     </div>

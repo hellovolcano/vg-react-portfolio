@@ -8,6 +8,7 @@ const Project = ({projectItem}) => {
         // Wrapping each project in a box? Maybe
         <Box sx={{
             boxShadow: 3,
+            borderRadius: 2
         }
         }>
                 <img className="portfolio-img" src={require(`../../assets/images/${imgName}`)} alt="screenshot of project" />

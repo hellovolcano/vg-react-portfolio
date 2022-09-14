@@ -40,7 +40,15 @@ header {
   display: flex;
   justify-content: space-between;
   flex-direction: column;
-  padding: 15px 25px;
+  padding: 15px 0;
+}
+
+header h1 {
+  padding-left: 25px;
+}
+
+.mobile-heading {
+  display: none;
 }
 
 
@@ -53,16 +61,19 @@ nav {
   background-size: cover;
   background-attachment: fixed;
   padding-top: 15px;
+  flex-wrap: wrap;
 }
 
 nav ul {
   margin: 10px 0 10px 20px;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 nav ul li {
   display: inline;
   list-style-type: none;
-  flex-basis: 200px;
+  /* flex-basis: 200px; */
   padding: 15px 20px;
   opacity: 100%;
 }
@@ -101,13 +112,16 @@ nav ul li a:hover {
 
 /* main content section styles */
 .main-content-wrapper {
-  padding-top: 25px;
+  padding-top: 15px;
+  padding-bottom: 25px;
 }
 
 
 /* Portfolio Component Styles */
 .portfolio-img {
   width: 100%;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
 }
 
 /* Project Component Styles */
@@ -135,8 +149,27 @@ button {
   font-family: 'Amatic SC', sans-serif;
 }
 
+/* Styles for the footer */
+
+footer {
+  width: 100%;
+  padding: 30px 0;
+  display: flex;
+  justify-content: space-around;
+  height: 50px;
+}
+/* This generates the height of the remainder of the content (minus the footer's
+set height to ensure the footer is pushed to the bottom of the screen */
+.body-wrapper {
+  min-height: calc(100vh - 128px);
+}
+
 @media screen and (min-width: 850px) {
   header {
     flex-direction: row;
+  }
+
+  .mobile-heading {
+    display: inline;
   }
 }
