@@ -3,7 +3,7 @@ import {Link} from 'react-router-dom'
 
 const About = () => {
     return (
-        <section>
+        <section className="about">
             <h2>I'm Valerie.</h2>
             <h3>I'm a full-stack web developer.</h3>
             <hr/>
