@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/vg-react-portfolio/static/css/main.7ab6e176.css",
-    "main.js": "/vg-react-portfolio/static/js/main.669a299d.js",
+    "main.css": "/vg-react-portfolio/static/css/main.84137dea.css",
+    "main.js": "/vg-react-portfolio/static/js/main.48dc92d2.js",
     "static/js/787.5b24e291.chunk.js": "/vg-react-portfolio/static/js/787.5b24e291.chunk.js",
     "static/media/bailey-anselme-eN5axbs60Po-unsplash.jpg": "/vg-react-portfolio/static/media/bailey-anselme-eN5axbs60Po-unsplash.a7aab2480a6b62e2e072.jpg",
     "static/media/trackStream.png": "/vg-react-portfolio/static/media/trackStream.20f4e5ef9c156ae8ee69.png",
     "static/media/iStreamuStream.png": "/vg-react-portfolio/static/media/iStreamuStream.f9e2d7d0aa2aa2479001.png",
     "index.html": "/vg-react-portfolio/index.html",
-    "main.7ab6e176.css.map": "/vg-react-portfolio/static/css/main.7ab6e176.css.map",
-    "main.669a299d.js.map": "/vg-react-portfolio/static/js/main.669a299d.js.map",
+    "main.84137dea.css.map": "/vg-react-portfolio/static/css/main.84137dea.css.map",
+    "main.48dc92d2.js.map": "/vg-react-portfolio/static/js/main.48dc92d2.js.map",
     "787.5b24e291.chunk.js.map": "/vg-react-portfolio/static/js/787.5b24e291.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.7ab6e176.css",
-    "static/js/main.669a299d.js"
+    "static/css/main.84137dea.css",
+    "static/js/main.48dc92d2.js"
   ]
 }
