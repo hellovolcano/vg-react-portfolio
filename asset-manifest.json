@@ -1,18 +1,21 @@
 {
   "files": {
-    "main.css": "/vg-react-portfolio/static/css/main.183368f5.css",
-    "main.js": "/vg-react-portfolio/static/js/main.ad03628a.js",
+    "main.css": "/vg-react-portfolio/static/css/main.4ecc6664.css",
+    "main.js": "/vg-react-portfolio/static/js/main.653269b0.js",
     "static/js/787.5b24e291.chunk.js": "/vg-react-portfolio/static/js/787.5b24e291.chunk.js",
     "static/media/bailey-anselme-eN5axbs60Po-unsplash.jpg": "/vg-react-portfolio/static/media/bailey-anselme-eN5axbs60Po-unsplash.a7aab2480a6b62e2e072.jpg",
     "static/media/trackStream.png": "/vg-react-portfolio/static/media/trackStream.20f4e5ef9c156ae8ee69.png",
     "static/media/iStreamuStream.png": "/vg-react-portfolio/static/media/iStreamuStream.f9e2d7d0aa2aa2479001.png",
+    "static/media/weather-dashboard.png": "/vg-react-portfolio/static/media/weather-dashboard.b7306b08faeb73cec96a.png",
+    "static/media/mvc-blog.png": "/vg-react-portfolio/static/media/mvc-blog.2d8ca8216fa327e48cce.png",
+    "static/media/profilePic.jpg": "/vg-react-portfolio/static/media/profilePic.8048a14db3667733372e.jpg",
     "index.html": "/vg-react-portfolio/index.html",
-    "main.183368f5.css.map": "/vg-react-portfolio/static/css/main.183368f5.css.map",
-    "main.ad03628a.js.map": "/vg-react-portfolio/static/js/main.ad03628a.js.map",
+    "main.4ecc6664.css.map": "/vg-react-portfolio/static/css/main.4ecc6664.css.map",
+    "main.653269b0.js.map": "/vg-react-portfolio/static/js/main.653269b0.js.map",
     "787.5b24e291.chunk.js.map": "/vg-react-portfolio/static/js/787.5b24e291.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.183368f5.css",
-    "static/js/main.ad03628a.js"
+    "static/css/main.4ecc6664.css",
+    "static/js/main.653269b0.js"
   ]
 }
