@@ -13,6 +13,7 @@ body {
   width: 100%;
   margin: 0;
   padding: 0;
+  background-color: var(--white)
 }
 
 a {
@@ -27,10 +28,13 @@ h1, h2, h3 {
 
 h2 {
   font-size: 48px;
+  color: var(--white)
 }
 
 h3 {
   font-size: 36px;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 /* Header Styles */
@@ -156,15 +160,16 @@ ul li a:hover, .project-links:hover {
   width: 100%;
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
+  border-bottom: 5px double var(--secondary-color);
 }
 
 /* Project Component Styles */
 .project-wrapper {
   padding: 3px 5px;
-  margin-top: 4px;
+  margin-top: 1px;
 }
 
-.tech-ul {
+.tech-ul, .skills-ul {
   display: flex;
   flex-wrap: wrap;
   margin: 0px;
@@ -172,7 +177,7 @@ ul li a:hover, .project-links:hover {
   padding-inline-start: 0;
 }
 
-.tech-li {
+.tech-li, .skills-li {
   display: inline;
   list-style-type: none;
   /* flex-basis: 100px; */
@@ -180,7 +185,7 @@ ul li a:hover, .project-links:hover {
   
 }
 
-.project-links {
+.project-links, .skills-li {
   padding: 5px 8px;
   margin: 3px;
   background-color: var(--secondary-color);
@@ -204,9 +209,31 @@ ul li a:hover, .project-links:hover {
   color: var(--white)
 }
 
+/* Resume Section */
+
+.resume h2, .resume h3 {
+  color: var(--primary-color)
+}
+
+
+.skills-ul {
+  justify-content: left;
+}
+
 /* Contact Form */
 button {
   font-family: 'Amatic SC', sans-serif;
+}
+
+.contact {
+  background-color: rgba(250, 235, 215, .9);
+  padding: 25px;
+  border-radius: 8px;
+}
+
+.contact h2 {
+  color: var(--primary-color);
+  margin-top: 15px;
 }
 
 /* Styles for the footer */
@@ -218,6 +245,7 @@ footer {
   justify-content: space-around;
   height: 50px;
 }
+
 /* This generates the height of the remainder of the content (minus the footer's
 set height to ensure the footer is pushed to the bottom of the screen */
 .body-wrapper, .about-content-wrapper {

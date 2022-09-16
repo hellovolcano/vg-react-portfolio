@@ -2,12 +2,21 @@ import React from 'react'
 import DownloadIcon from '@mui/icons-material/Download'
 
 const Resume = () => {
+
+    const skills = ['HTML5', 'CSS3', 'JavaScript', 'Node.js', 'Express.js', 'React.js', 'MongoDB', 'MySQL']
+    
     return(
-        <section>
+        <section className="resume">
             <div>
                 <h2>Resume</h2>
                 <DownloadIcon fontSize='large' />
                 <a href="http://www.google.com">Download Resume</a>
+                <h3>Skills</h3>
+                <ul className="skills-ul">
+                    {skills.map((skill) => (
+                        <li className="skills-li" key={skill}>{skill}</li>
+                    ))}
+                </ul>
             </div>
 
         </section>

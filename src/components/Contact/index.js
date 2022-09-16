@@ -4,7 +4,6 @@ import TextField from '@mui/material/TextField'
 import SendIcon from '@mui/icons-material/Send'
 import Stack from '@mui/material/Stack'
 import Alert from '@mui/material/Alert'
-import { GlobalStyles } from '@mui/material'
 import { validateEmail} from '../../utils/helpers'
 
 const ContactForm = () => {
@@ -14,10 +13,9 @@ const ContactForm = () => {
 
     const handleChange = (e) => {
         if (e.target.name === 'email') {
-            console.log('email clicked')
             const isValid = validateEmail(e.target.value)
             if (!isValid) {
-                setErrorMessage('Your email is invalid')
+                setErrorMessage('Please enter a valid email address')
             } else {
                 setErrorMessage('')
             }
@@ -40,9 +38,7 @@ const ContactForm = () => {
     }
 
     return(
-        <section>
-
-            <GlobalStyles styles={{ button: { fontFamily: 'Amatic SC' } }} />
+        <section className="contact">
 
             <h2>Contact Me</h2>
             <Stack 
@@ -50,15 +46,15 @@ const ContactForm = () => {
                 spacing={2} 
                 sx={{
                     width: 4/5,
-                    mx: "auto"
+                    mx: "auto",
                 }}
                 
             >
-                <TextField id="name" name="name" label="Name" variant="outlined" onBlur={handleChange} defaultValue={name} />
-                <TextField id="email" name="email" label="Email" variant="outlined" onBlur={handleChange} defaultValue={email} />
-                <TextField id="message" name="message" label="Message" variant="outlined" onBlur={handleChange} defaultValue={message} multiline rows={4} />
-                {errorMessage && <Alert severity="error">{errorMessage}</Alert>}
-                <Button variant="outlined" onClick={handleSubmit}>
+                <TextField  sx={{ color: 'antiquewhite'}} id="name" name="name" label="Name" variant="outlined" onBlur={handleChange} defaultValue={name} />
+                <TextField  sx={{ fontFamily: 'Poppins'}} id="email" name="email" label="Email" variant="outlined" onBlur={handleChange} defaultValue={email} />
+                <TextField  id="message" name="message" label="Message" variant="outlined" onBlur={handleChange} defaultValue={message} multiline rows={4} sx={{ fontFamily: 'Poppins'}} />
+                {errorMessage && <Alert severity="error" variant="filled" sx={{ fontFamily: 'Poppins'}} >{errorMessage}</Alert>}
+                <Button variant="outlined" onClick={handleSubmit} >
                     Submit  &nbsp;&nbsp;<SendIcon />
                 </Button>
         </Stack>

@@ -8,12 +8,14 @@ const Project = ({projectItem}) => {
         // Wrapping each project in a box? Maybe
         <Box sx={{
             boxShadow: 3,
-            borderRadius: 2
+            borderRadius: 2,
+            backgroundColor: 'antiquewhite',
+            padding: 1,
         }
         }>
                 <img className="portfolio-img" src={require(`../../assets/images/${imgName}`)} alt="screenshot of project" />
                 <div className="project-wrapper">
-                    <h2>{name}</h2>
+                    <h3>{name}</h3>
                     <p>{description}</p>
                     <div className="project-link-wrapper">
                         <span className="project-links"><a href={githubUrl} target="_blank" rel="noreferrer">GitHub</a></span>
@@ -22,7 +24,7 @@ const Project = ({projectItem}) => {
                     {/* Map through the technologies used */}
                         <ul className="tech-ul">
                             {technologies.map((tech) => (
-                                <li className="tech-li">{tech}</li>
+                                <li className="tech-li" key={tech}>{tech}</li>
                             ))}
                         </ul>
                     <div>
