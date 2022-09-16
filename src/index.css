@@ -94,7 +94,7 @@ nav ul li a {
   color: var(--white)
 }
 
-ul li a:hover {
+ul li a:hover, .project-links:hover {
   color: var(--white); 
   animation-duration: 1s;
   animation-fill-mode: forwards;
@@ -121,9 +121,14 @@ ul li a:hover {
 }
 
 /* main content section styles */
-.main-content-wrapper, .about-content-wrapper {
+.main-content-wrapper {
+  width: 85%;
+}
+
+.main-content-wrapper {
   padding-top: 15px;
   padding-bottom: 25px;
+  margin: 0 auto;
 }
 
 /* ABOUT styles */
@@ -133,8 +138,9 @@ ul li a:hover {
   url("./assets/images/bailey-anselme-eN5axbs60Po-unsplash.jpg");
   background-attachment: fixed;
   background-position: 80%;
-  min-height: 100%;
-  height: 100%;
+  /* min-height: calc(100vh - 304px);
+  overflow: hidden; */
+
 }
 
 .about {
@@ -162,6 +168,8 @@ ul li a:hover {
   display: flex;
   flex-wrap: wrap;
   margin: 0px;
+  justify-content: center;
+  padding-inline-start: 0;
 }
 
 .tech-li {
@@ -169,11 +177,31 @@ ul li a:hover {
   list-style-type: none;
   /* flex-basis: 100px; */
   padding: 5px 8px;
+  
+}
+
+.project-links {
+  padding: 5px 8px;
+  margin: 3px;
   background-color: var(--secondary-color);
   border-top-right-radius: 15px;
   border-bottom-left-radius: 15px;
-  color: var(--white)
+  color: var(--white);
+}
 
+.project-links a {
+  color: var(--white)
+}
+
+/* adding .project-links a:hover up to nav ul li a:hover */
+
+.project-link-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.project-links a {
+  color: var(--white)
 }
 
 /* Contact Form */
@@ -192,7 +220,7 @@ footer {
 }
 /* This generates the height of the remainder of the content (minus the footer's
 set height to ensure the footer is pushed to the bottom of the screen */
-.body-wrapper {
+.body-wrapper, .about-content-wrapper {
   min-height: calc(100vh - 128px);
 }
 

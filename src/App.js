@@ -1,4 +1,3 @@
-import './App.css';
 import {Routes, Route, useLocation } from 'react-router'
 import Header from '../src/components/Header'
 import ContactForm from '../src/components/Contact'
@@ -11,21 +10,22 @@ import { useEffect, useState} from 'react'
 function App() {
 
   const location = useLocation()
-  console.log(location.pathname.split('/'))
+  console.log("0" + location.pathname.split('/')[0])
+  console.log("1" + location.pathname.split('/')[1])
 
-  const [isAbout, setIsAbout] = useState(location.pathname === '/about')
-  const pathName = '/resume'
+  const [isAbout, setIsAbout] = useState(true)
+
   useEffect(() => {
-    setIsAbout(location.pathname === '/about')
+    setIsAbout(location.pathname.split('/')[1] === 'about')
 }, [location.pathname])
 
-console.log(isAbout)
   return (
     <div>
       {/* Adding one more wrapper to help push the footer */}
-      <div className="body-wrapper">
+      <div className={isAbout ? ("about-content-wrapper") : ("body-wrapper")}>
         <Header />
-        <div id="main-wrapper" className={isAbout ? ("about-content-wrapper") : ("main-content-wrapper")}>
+        {/* <div id="main-wrapper" className={isAbout ? ("about-content-wrapper") : ("main-content-wrapper")}> */}
+        <div id="main-wrapper" className="main-content-wrapper">
             <Routes>
               <Route path="/" element={<About />} />
               <Route path="/vg-react-portfolio" element={<About />} />

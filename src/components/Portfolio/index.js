@@ -28,7 +28,7 @@ const Portfolio = () => {
             <Grid container spacing={2}>
             {projects.map((project) => (
                 <Grid xs={12} sm={12} md={6} lg={4}>
-                    <Project projectItem={project} />
+                    <Project key={project.name} projectItem={project} />
                 </Grid>
             )
             )}
