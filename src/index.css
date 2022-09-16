@@ -154,6 +154,21 @@ ul li a:hover, .project-links:hover {
   height: 100%;
 }
 
+.about-pic {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap-reverse;
+}
+
+.about-pic img {
+  border: 1px solid var(--white);
+  border-radius: 50%;
+}
+
+.about-pic div {
+  text-align: center;
+}
+
 
 /* Portfolio Component Styles */
 .portfolio-img {
@@ -252,7 +267,21 @@ set height to ensure the footer is pushed to the bottom of the screen */
   min-height: calc(100vh - 128px);
 }
 
+
 @media screen and (min-width: 899px) {
+  .about-pic {
+    justify-content: space-between;
+  }
+
+  .about-pic div {
+    text-align: left;
+  }
+
+  .about-pic img {
+    margin-right: 100px;
+    margin-bottom: 20px;
+  }
+
   header {
     flex-direction: row;
   }

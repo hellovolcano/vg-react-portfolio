@@ -9,8 +9,8 @@ const Resume = () => {
         <section className="resume">
             <div>
                 <h2>Resume</h2>
-                <DownloadIcon fontSize='large' />
-                <a href="http://www.google.com">Download Resume</a>
+                <DownloadIcon fontSize='large' sx={{ color: '#303b47'}} />
+                <a href="https://drive.google.com/file/d/10kFUDbmz3-21grN5jEHNfqqFJ-6yuS09/view?usp=sharing">Download Resume</a>
                 <h3>Skills</h3>
                 <ul className="skills-ul">
                     {skills.map((skill) => (

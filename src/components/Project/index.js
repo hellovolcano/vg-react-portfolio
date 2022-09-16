@@ -11,6 +11,7 @@ const Project = ({projectItem}) => {
             borderRadius: 2,
             backgroundColor: 'antiquewhite',
             padding: 1,
+            height: 1
         }
         }>
                 <img className="portfolio-img" src={require(`../../assets/images/${imgName}`)} alt="screenshot of project" />

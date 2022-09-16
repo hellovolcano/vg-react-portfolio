@@ -8,8 +8,8 @@ const Portfolio = () => {
             name: 'Track Stream',
             githubUrl: 'https://github.com/hellovolcano/streaming-service-tracker',
             deployedUrl: 'https://shielded-thicket-83954.herokuapp.com/',
-            description: 'Track Stream\'s purpose is to keep you notified of all the video streaming services you are subscribed too. The application will give you a visual reminder of how much you\'re spending on streaming services and when the renewal period starts again.',
-            technologies: ['MySQL','JavaScript','ExpressJS','HTML5','CSS3'],
+            description: 'Track Stream track your video streaming services subscriptions to help you visualize your spending and manage your budget.',
+            technologies: ['MySQL','JavaScript','ExpressJS','HTML','CSS'],
             imgName: 'trackStream.png'
         },
         {
@@ -17,17 +17,33 @@ const Portfolio = () => {
             githubUrl: 'http://www.github.com/hellovolcano/random-movie-recs',
             deployedUrl: 'https://hellovolcano.github.io/random-movie-recs',
             description: 'Quickly search for the movie you want to watch amonst multiple popular streaming services.',
-            technologies: ['HTML5', 'CSS3', 'JavaScript'],
+            technologies: ['HTML', 'CSS', 'JavaScript'],
             imgName: 'iStreamuStream.png'
+        },
+        {
+            name: 'The Tech Blog',
+            githubUrl: 'https://github.com/hellovolcano/sparky-tech-blog',
+            deployedUrl: 'https://cryptic-forest-67933.herokuapp.com/',
+            description: 'CMS-style blog that leverages Handlebars as a template engine, and Sequelize as an ORM.',
+            technologies: ['HTML', 'CSS','JavaScript','Node.js','Handlebars','MySQL'],
+            imgName: 'mvc-blog.png'
+        },
+        {
+            name: 'Weather Dashboard',
+            githubUrl: 'https://github.com/hellovolcano/weather-dashboard',
+            deployedUrl: 'Weather Dashboard',
+            description: 'Weather dashboard leverages the Open Weather API to show you weather conditions for your city.',
+            technologies: ['HTML', 'CSS', 'JavaScript'],
+            imgName: 'weather-dashboard.png'
         }
     ])
 
     return (
         <section>
             <h2>Portfolio</h2>
-            <Grid container spacing={2}>
+            <Grid container spacing={2} rowSpacing={4}>
             {projects.map((project) => (
-                <Grid xs={12} sm={12} md={6} lg={4}>
+                <Grid item xs={12} sm={12} md={6} lg={4}>
                     <Project key={project.name} projectItem={project} />
                 </Grid>
             )
