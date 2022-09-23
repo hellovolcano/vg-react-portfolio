@@ -31,10 +31,27 @@ const Portfolio = () => {
         {
             name: 'Weather Dashboard',
             githubUrl: 'https://github.com/hellovolcano/weather-dashboard',
-            deployedUrl: 'Weather Dashboard',
+            deployedUrl: 'https://hellovolcano.github.io/weather-dashboard',
             description: 'Weather dashboard leverages the Open Weather API to show you weather conditions for your city.',
             technologies: ['HTML', 'CSS', 'JavaScript'],
             imgName: 'weather-dashboard.png'
+        },
+        {
+            name: 'Text Editor',
+            githubUrl: 'https://www.github.com/hellovolcano/pwa-text-editor',
+            deployedUrl: 'https://afternoon-beyond-91997.herokuapp.com/',
+            description: 'For this text editor project, we were given front end code for a text editor that leveraged Code Mirror. I implemented the persistant data and made it a progressive web application. ',
+            technologies: ['JavaScript','IndexedDB','Webpack','Workbox'],
+            imgName: 'pwa-text-editor.png'
+
+        },
+        {
+            name: 'Daily Workday Planner',
+            githubUrl: 'https://www.github.com/hellovolcanon/daily-workday-planner',
+            deployedUrl: 'https://hellovolcano.github.io/daily-workday-planner/',
+            description: 'A front end schedule planner written that contextually highlights each hour timeblock.',
+            technologies: ['JavaScript', 'HTML','CSS','Luxon.js'],
+            imgName: 'work-day-scheduler.png'
         }
     ])
 
