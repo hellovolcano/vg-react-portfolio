@@ -6,11 +6,11 @@ const Portfolio = () => {
     const [projects] = useState([
         {
             name: 'Syntax Poetry',
-            githubUrl: '',
+            githubUrl: 'https://github.com/hellovolcano/mern-full-stack.git',
             deployedUrl: 'https://secure-stream-79386.herokuapp.com/',
             description: 'Syntax Poetry is a forum for poets to post their poetry and interact with the work of other poets.',
             technologies: ['MongoDB','GraphQL','React.js','Material-UI','JavaScript','HTML','CSS'],
-            syntax: 'syntax.png'
+            imgName: 'syntax.png'
         },
         {
             name: 'Track Stream',
