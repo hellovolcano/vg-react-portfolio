@@ -5,6 +5,14 @@ import Project from '../Project'
 const Portfolio = () => {
     const [projects] = useState([
         {
+            name: 'Syntax Poetry',
+            githubUrl: '',
+            deployedUrl: 'https://secure-stream-79386.herokuapp.com/',
+            description: 'Syntax Poetry is a forum for poets to post their poetry and interact with the work of other poets.',
+            technologies: ['MongoDB','GraphQL','React.js','Material-UI','JavaScript','HTML','CSS'],
+            syntax: 'syntax.png'
+        },
+        {
             name: 'Track Stream',
             githubUrl: 'https://github.com/hellovolcano/streaming-service-tracker',
             deployedUrl: 'https://shielded-thicket-83954.herokuapp.com/',
@@ -44,14 +52,6 @@ const Portfolio = () => {
             technologies: ['JavaScript','IndexedDB','Webpack','Workbox'],
             imgName: 'pwa-text-editor.png'
 
-        },
-        {
-            name: 'Daily Workday Planner',
-            githubUrl: 'https://www.github.com/hellovolcanon/daily-workday-planner',
-            deployedUrl: 'https://hellovolcano.github.io/daily-workday-planner/',
-            description: 'A front end schedule planner written that contextually highlights each hour timeblock.',
-            technologies: ['JavaScript', 'HTML','CSS','Luxon.js'],
-            imgName: 'work-day-scheduler.png'
         }
     ])
 
