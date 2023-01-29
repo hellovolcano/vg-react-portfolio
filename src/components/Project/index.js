@@ -20,7 +20,7 @@ const Project = ({projectItem}) => {
                     <p>{description}</p>
                     <div className="project-link-wrapper">
                         <span className="project-links"><a href={githubUrl} target="_blank" rel="noreferrer">GitHub</a></span>
-                        <span className="project-links"><a href={deployedUrl} target="_blank" rel="noreferrer">Deployed</a></span>
+                        {/* <span className="project-links"><a href={deployedUrl} target="_blank" rel="noreferrer">Deployed</a></span> */}
                     </div>
                     {/* Map through the technologies used */}
                         <ul className="tech-ul">
