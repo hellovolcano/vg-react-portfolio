@@ -5,6 +5,14 @@ import Project from '../Project'
 const Portfolio = () => {
     const [projects] = useState([
         {
+            name: 'Hippohonk',
+            githubUrl: 'https://github.com/hellovolcano/hippohonk',
+            deployedUrl: 'https://www.hippohonk.com/',
+            description: 'Hippohonk is dedicated to finding and rating showcasing bands at SXSW Austin. Originally created with Ruby on Rails in 2011 and ported to PERN.',
+            technologies: ['Postgres','Node.js','React.js','Material-UI','JavaScript','HTML','CSS', 'Express.js'],
+            imgName: 'hippohonk.png'
+        },
+        {
             name: 'Syntax Poetry',
             githubUrl: 'https://github.com/hellovolcano/mern-full-stack.git',
             deployedUrl: 'https://secure-stream-79386.herokuapp.com/',
