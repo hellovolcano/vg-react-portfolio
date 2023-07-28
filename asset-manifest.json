@@ -1,26 +1,26 @@
 {
   "files": {
-    "main.css": "/vg-react-portfolio/static/css/main.4ecc6664.css",
-    "main.js": "/vg-react-portfolio/static/js/main.a6da62fd.js",
-    "static/js/787.5b24e291.chunk.js": "/vg-react-portfolio/static/js/787.5b24e291.chunk.js",
-    "static/media/hippohonk.png": "/vg-react-portfolio/static/media/hippohonk.a048c1ea99a0f5077ac1.png",
-    "static/media/bailey-anselme-eN5axbs60Po-unsplash.jpg": "/vg-react-portfolio/static/media/bailey-anselme-eN5axbs60Po-unsplash.a7aab2480a6b62e2e072.jpg",
-    "static/media/vg-react-portfolio.png": "/vg-react-portfolio/static/media/vg-react-portfolio.5a5d22ecb8cce212c037.png",
-    "static/media/syntax.png": "/vg-react-portfolio/static/media/syntax.5a1838aaf6b3916f8843.png",
-    "static/media/trackStream.png": "/vg-react-portfolio/static/media/trackStream.20f4e5ef9c156ae8ee69.png",
-    "static/media/iStreamuStream.png": "/vg-react-portfolio/static/media/iStreamuStream.f9e2d7d0aa2aa2479001.png",
-    "static/media/weather-dashboard.png": "/vg-react-portfolio/static/media/weather-dashboard.b7306b08faeb73cec96a.png",
-    "static/media/mvc-blog.png": "/vg-react-portfolio/static/media/mvc-blog.2d8ca8216fa327e48cce.png",
-    "static/media/work-day-scheduler.png": "/vg-react-portfolio/static/media/work-day-scheduler.f5ddcfc92d161cc900b2.png",
-    "static/media/pwa-text-editor.png": "/vg-react-portfolio/static/media/pwa-text-editor.8fcf29de1a2ffe521b07.png",
-    "static/media/profilePic.jpg": "/vg-react-portfolio/static/media/profilePic.8048a14db3667733372e.jpg",
-    "index.html": "/vg-react-portfolio/index.html",
-    "main.4ecc6664.css.map": "/vg-react-portfolio/static/css/main.4ecc6664.css.map",
-    "main.a6da62fd.js.map": "/vg-react-portfolio/static/js/main.a6da62fd.js.map",
-    "787.5b24e291.chunk.js.map": "/vg-react-portfolio/static/js/787.5b24e291.chunk.js.map"
+    "main.css": "/static/css/main.25897bf5.css",
+    "main.js": "/static/js/main.cc558e8c.js",
+    "static/js/787.5b24e291.chunk.js": "/static/js/787.5b24e291.chunk.js",
+    "static/media/hippohonk.png": "/static/media/hippohonk.a048c1ea99a0f5077ac1.png",
+    "static/media/bailey-anselme-eN5axbs60Po-unsplash.jpg": "/static/media/bailey-anselme-eN5axbs60Po-unsplash.a7aab2480a6b62e2e072.jpg",
+    "static/media/vg-react-portfolio.png": "/static/media/vg-react-portfolio.5a5d22ecb8cce212c037.png",
+    "static/media/syntax.png": "/static/media/syntax.5a1838aaf6b3916f8843.png",
+    "static/media/trackStream.png": "/static/media/trackStream.20f4e5ef9c156ae8ee69.png",
+    "static/media/iStreamuStream.png": "/static/media/iStreamuStream.f9e2d7d0aa2aa2479001.png",
+    "static/media/weather-dashboard.png": "/static/media/weather-dashboard.b7306b08faeb73cec96a.png",
+    "static/media/mvc-blog.png": "/static/media/mvc-blog.2d8ca8216fa327e48cce.png",
+    "static/media/work-day-scheduler.png": "/static/media/work-day-scheduler.f5ddcfc92d161cc900b2.png",
+    "static/media/pwa-text-editor.png": "/static/media/pwa-text-editor.8fcf29de1a2ffe521b07.png",
+    "static/media/profilePic.jpg": "/static/media/profilePic.8048a14db3667733372e.jpg",
+    "index.html": "/index.html",
+    "main.25897bf5.css.map": "/static/css/main.25897bf5.css.map",
+    "main.cc558e8c.js.map": "/static/js/main.cc558e8c.js.map",
+    "787.5b24e291.chunk.js.map": "/static/js/787.5b24e291.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.4ecc6664.css",
-    "static/js/main.a6da62fd.js"
+    "static/css/main.25897bf5.css",
+    "static/js/main.cc558e8c.js"
   ]
 }
