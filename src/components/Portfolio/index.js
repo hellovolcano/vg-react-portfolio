@@ -15,7 +15,7 @@ const Portfolio = () => {
         {
             name: 'Syntax Poetry',
             githubUrl: 'https://github.com/hellovolcano/mern-full-stack.git',
-            deployedUrl: 'https://secure-stream-79386.herokuapp.com/',
+            deployedUrl: '',
             description: 'Syntax Poetry is a forum for poets to post their poetry and interact with the work of other poets.',
             technologies: ['MongoDB','GraphQL','React.js','Material-UI','JavaScript','HTML','CSS'],
             imgName: 'syntax.png'
@@ -23,7 +23,7 @@ const Portfolio = () => {
         {
             name: 'Track Stream',
             githubUrl: 'https://github.com/hellovolcano/streaming-service-tracker',
-            deployedUrl: 'https://shielded-thicket-83954.herokuapp.com/',
+            deployedUrl: '',
             description: 'Track Stream track your video streaming services subscriptions to help you visualize your spending and manage your budget.',
             technologies: ['MySQL','JavaScript','ExpressJS','HTML','CSS'],
             imgName: 'trackStream.png'
@@ -39,7 +39,7 @@ const Portfolio = () => {
         {
             name: 'The Tech Blog',
             githubUrl: 'https://github.com/hellovolcano/sparky-tech-blog',
-            deployedUrl: 'https://cryptic-forest-67933.herokuapp.com/',
+            deployedUrl: '',
             description: 'CMS-style blog that leverages Handlebars as a template engine, and Sequelize as an ORM.',
             technologies: ['HTML', 'CSS','JavaScript','Node.js','Handlebars','MySQL'],
             imgName: 'mvc-blog.png'
