@@ -51,15 +51,6 @@ const Portfolio = () => {
             description: 'Weather dashboard leverages the Open Weather API to show you weather conditions for your city.',
             technologies: ['HTML', 'CSS', 'JavaScript'],
             imgName: 'weather-dashboard.png'
-        },
-        {
-            name: 'Text Editor',
-            githubUrl: 'https://www.github.com/hellovolcano/pwa-text-editor',
-            deployedUrl: 'https://afternoon-beyond-91997.herokuapp.com/',
-            description: 'For this text editor project, we were given front end code for a text editor that leveraged Code Mirror. I implemented the persistant data and made it a progressive web application. ',
-            technologies: ['JavaScript','IndexedDB','Webpack','Workbox'],
-            imgName: 'pwa-text-editor.png'
-
         }
     ])
 
