@@ -9,7 +9,6 @@ const Project = ({projectItem}) => {
         <Box sx={{
             boxShadow: 3,
             borderRadius: 2,
-            backgroundColor: 'antiquewhite',
             padding: 1,
             height: 1
         }
