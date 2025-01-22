@@ -5,16 +5,8 @@ import AlternateEmailIcon from '@mui/icons-material/AlternateEmail'
 import CodeIcon from '@mui/icons-material/Code';
 
 const Footer = () => {
-    // Style for the footer
-    const footerStyle = {
-        backgroundColor: 'antiquewhite',
-        // display: 'flex',
-        // justifyContent: 'space-between',
-
-    }
-
     return(
-        <footer style={footerStyle}>
+        <footer>
             <div>
                 <div className="icons">
                     <a href="http://www.github.com/hellovolcano" target="_blank" rel="noreferrer"><GitHubIcon fontSize='large' /></a>

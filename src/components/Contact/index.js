@@ -55,21 +55,21 @@ const ContactForm = () => {
     return(
         <section className="contact">
 
-            <h2>Contact Me</h2>
+            
             <Stack 
                 component="form" 
-                spacing={2} 
+                spacing={1} 
                 sx={{
                     width: 4/5,
                     mx: "auto",
                 }}
                 onSubmit={handleSubmit}
-                
             >
-                <TextField  sx={{ color: 'antiquewhite'}} id="name" name="name" label="Name" variant="outlined" onBlur={handleChange} defaultValue={name} />
-                <TextField  sx={{ fontFamily: 'Poppins'}} id="email" name="email" label="Email" variant="outlined" onBlur={handleChange} defaultValue={email} />
+                <h2>Contact Me</h2>
+                <TextField  id="name" name="name" label="Name" variant="outlined" onBlur={handleChange} defaultValue={name} />
+                <TextField  sx={{ fontFamily: 'Inter'}} id="email" name="email" label="Email" variant="outlined" onBlur={handleChange} defaultValue={email} />
                 <TextField  id="message" name="message" label="Message" variant="outlined" onBlur={handleChange} defaultValue={message} multiline rows={4} sx={{ fontFamily: 'Poppins'}} />
-                {errorMessage && <Alert severity="error" variant="filled" sx={{ fontFamily: 'Poppins'}} >{errorMessage}</Alert>}
+                {errorMessage && <Alert severity="error" variant="filled" sx={{ fontFamily: 'Inter'}} >{errorMessage}</Alert>}
                 <Button variant="outlined" type="submit" disabled={state.submitting}>
                     Submit  &nbsp;&nbsp;<SendIcon />
                 </Button>

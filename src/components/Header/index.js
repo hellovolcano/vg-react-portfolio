@@ -16,7 +16,6 @@ const Header = () => {
 
     return(
         <header>
-                <h1>Valerie Gleason <span className="mobile-heading">| Full-Stack Developer</span></h1>
                 {isMobile ? (
                     <MobileNav /> ) : (<Nav />)
                 }

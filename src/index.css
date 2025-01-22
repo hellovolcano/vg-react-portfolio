@@ -5,17 +5,24 @@
   --highlight: #a3b18a;
   --bright: #dad7cd;
   --white: #ffffff;
+  --primary-rgb: rgb(52 78 65);
 }
 
 body {
   font-family: "Inter", serif;
   font-optical-sizing: auto;
-  font-weight: 200;
+  font-weight: 400;
   font-style: normal;
   width: 100%;
   margin: 0;
   padding: 0;
-  background-color: var(--bright)
+  background-color: var(--bright);
+  background: linear-gradient(305deg, var(--bright) 0 50%, var(--highlight) 50% 100%);
+  background-repeat: no-repeat;
+}
+
+hr {
+  border: 1px solid var(--primary-color);
 }
 
 a {
@@ -25,15 +32,20 @@ a {
 
 /* Generic Heading Styles */
 h1, h2, h3 {
-  font-family: "Lexend Deca", serif;
+  font-family: "Josefin Sans", serif;
   font-optical-sizing: auto;
-  font-weight: 400;
+  font-weight: 300;
   font-style: normal;
+}
+
+h1 {
+  text-transform: uppercase;
+  font-kerning: auto;
 }
 
 h2 {
   font-size: 48px;
-  color: var(--secondary-color)
+  color: var(--primary-color)
 }
 
 h3 {
@@ -42,15 +54,25 @@ h3 {
   margin-bottom: 10px;
 }
 
+.headline {
+  text-transform: uppercase;
+  margin-bottom: 0px;
+}
+
+.emph {
+  color: var(--tertiary-color);
+}
+
 /* Header Styles */
 header {
   color: var(--primary-color);
-  width: 100%;
+  width: 90%;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: flex-end;
   align-items: center;
-  padding: 15px 0;
+  /* padding: 15px 0; */
+  margin: 20px;
 }
 
 .mobile-heading {
@@ -90,30 +112,22 @@ ul li a {
 
 nav ul li a {
   color: var(--primary-color);
-  border-radius: 20px;
   padding: 10px;
-  border: 1px solid var(--primary-color);
+  transition: all 750ms ease-out 10ms;
+  border-radius: 8px;
 }
+
 
 ul li a:hover, .project-links:hover {
   color: var(--bright); 
-  animation-duration: 1s;
+  /* animation-duration: 1s;
   animation-fill-mode: forwards;
-  animation-name: fadein;
+  animation-name: fadein; */
 }
 
-@keyframes fadein {
-  from {
-      background-color: "";
-  }
-
-  to {
-      background-color: var(--highlight);
-      border-top-right-radius: 5px;
-      border-bottom-left-radius: 5px;
-      color: var(--white);
-      border: 1px solid var(--white);
-  }
+nav ul li a:hover {
+  background-color: var(--primary-color);
+  color: var(--bright);
 }
 
 .active {
@@ -125,7 +139,7 @@ ul li a:hover, .project-links:hover {
 
 /* main content section styles */
 .main-content-wrapper {
-  width: 85%;
+  width: 95%;
 }
 
 .main-content-wrapper {
@@ -165,19 +179,48 @@ ul li a:hover, .project-links:hover {
   text-align: center;
 }
 
+.proj-container {
+  position: relative;
+  width: 100%;
+}
 
 /* Portfolio Component Styles */
 .portfolio-img {
   width: 100%;
-  border-top-left-radius: 8px;
-  border-top-right-radius: 8px;
-  border-bottom: 5px solid var(--secondary-color);
+  filter: drop-shadow(var(--primary-color) 2px 2px 2px);
+  opacity: 1;
+  display: block;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
 }
+
+/* .portfolio-img:hover {
+  transform: scale(1.1);
+} */
 
 /* Project Component Styles */
 .project-wrapper {
-  padding: 3px 5px;
-  margin-top: 1px;
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100%;
+  color: var(--primary-color);
+  text-align: center;
+}
+
+.proj-container:hover .portfolio-img {
+  opacity: 0.2;
+  transform: scale(1.03);
+}
+
+.proj-container:hover .project-wrapper {
+  opacity: 1;
 }
 
 .tech-ul, .skills-ul {
@@ -193,6 +236,7 @@ ul li a:hover, .project-links:hover {
   list-style-type: none;
   /* flex-basis: 100px; */
   padding: 5px 8px;
+  font-weight: 600;
   
 }
 
@@ -237,7 +281,6 @@ button {
 }
 
 .contact {
-  background-color: rgba(250, 235, 215, .9);
   padding: 25px;
   border-radius: 8px;
 }
@@ -257,6 +300,14 @@ footer {
   height: 50px;
 }
 
+.icons a {
+  transition: color 750ms ease-in 30ms;
+}
+
+.icons a:hover {
+  color: var(--secondary-color);
+}
+
 /* This generates the height of the remainder of the content (minus the footer's
 set height to ensure the footer is pushed to the bottom of the screen */
 .body-wrapper, .about-content-wrapper {
@@ -264,9 +315,11 @@ set height to ensure the footer is pushed to the bottom of the screen */
 }
 
 
-@media screen and (min-width: 899px) {
+@media screen and (min-width: 700px) {
   .about-pic {
+    flex-direction: row;
     justify-content: space-between;
+    flex-wrap: nowrap;
   }
 
   .about-pic div {
@@ -280,7 +333,8 @@ set height to ensure the footer is pushed to the bottom of the screen */
 
   header {
     flex-direction: row;
-    justify-content: center;
+    justify-content: flex-end;
+    align-items: center;
   }
 
   .mobile-heading {

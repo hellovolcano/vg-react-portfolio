@@ -10,7 +10,7 @@ const MobileNav = () => {
     const buttonStyle = {
         background: 'none',
         border: 'none',
-        color: 'antiquewhite',
+        color: '#344e41',
         marginTop: 20,
         marginRight: 10
     }
@@ -21,6 +21,10 @@ const MobileNav = () => {
         textTransform: 'uppercase'
     }
 
+    const mobileNav = {
+        paddingInlineStart: 0
+    }
+
     return(
         <div>
             <button style={buttonStyle} onClick={() => setState(true)}><MenuIcon fontSize="large" /> </button>
@@ -29,16 +33,16 @@ const MobileNav = () => {
                 <Box
                     sx={{ 
                         width: "auto",
-                        backgroundColor: 'antiquewhite' }}
+                        backgroundColor: '#a3b18a' }}
                     role="presentation"
                     onClick={() => setState(false)}
                     onKeyDown={() => setState(false)}
                     >
-                    <ul>
+                    <ul style={mobileNav}>
                         {/* TODO: Pull this list into a separate component to be shared between desktop nav and mobile nav */}
                         <li style={liStyle}><NavLink to ="/about">about</NavLink></li>
                         <li style={liStyle}><NavLink to="/portfolio">portfolio</NavLink></li>
-                        <li style={liStyle}><NavLink to="/resume">resume</NavLink></li>
+                        {/* <li style={liStyle}><NavLink to="/resume">resume</NavLink></li> */}
                         <li style={liStyle}><NavLink to="/contact">contact</NavLink></li>
                     </ul> 
                 </Box>
