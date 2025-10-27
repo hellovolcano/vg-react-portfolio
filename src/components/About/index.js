@@ -16,8 +16,8 @@ const About = () => {
         <section className="about">
             <div className="about-pic">
                 <div>
-                    <h2 class="headline">Hi! I'm Valerie.</h2>
-                    <h3>I'm a <span class="emph">web developer</span>, <span class="emph">technical communicator</span>, and <span class="emph">project manager.</span></h3>
+                    <h2 className="headline">Hi! I'm Valerie.</h2>
+                    <h3>I'm a <span className="emph">web developer</span>, <span className="emph">technical communicator</span>, and <span className="emph">project manager.</span></h3>
                 </div>
                 <img src={profilePic} alt="Valerie headshot" />
             </div>

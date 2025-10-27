@@ -7,6 +7,7 @@ import About from '../src/components/About'
 import Footer from '../src/components/Footer'
 import { useEffect, useState} from 'react'
 import { ThemeProvider, createTheme } from '@mui/material/styles'
+import MainCard from './components/Main'
   
 function App() {
 
@@ -96,7 +97,7 @@ function App() {
   const [isAbout, setIsAbout] = useState(true)
 
   useEffect(() => {
-    setIsAbout(location.pathname.split('/')[1] !== 'resume' )
+    setIsAbout(location.pathname.split('/')[1] === '' )
 }, [location.pathname])
 
 
@@ -105,11 +106,11 @@ function App() {
     <ThemeProvider theme={theme}>
       {/* Adding one more wrapper to help push the footer */}
       <div className={isAbout ? ("about-content-wrapper") : ("body-wrapper")}>
-        <Header />
+        {!isAbout && <Header />}
         {/* <div id="main-wrapper" className={isAbout ? ("about-content-wrapper") : ("main-content-wrapper")}> */}
         <div id="main-wrapper" className="main-content-wrapper">
             <Routes>
-              <Route path="/" element={<About />} />
+              <Route path="/" element={<MainCard />} />
               <Route path="/vg-react-portfolio" element={<About />} />
               <Route path="about" element={<About />} />
               <Route path="/portfolio" element={<Portfolio />} />
