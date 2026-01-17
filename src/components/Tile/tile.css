@@ -1,0 +1,23 @@
+.tile {
+    position: relative;
+    overflow: hidden;
+    margin: 30px;
+    width: 100%;
+    text-align: center;
+}
+
+.title {
+    position: relative;
+    z-index: 1;
+    color: white;
+    font-size: 1rem;
+    text-transform: uppercase;
+}
+
+
+@media screen and (min-width: 700px) {
+    .tile {
+        width: auto;
+        text-align: center;
+    }
+}

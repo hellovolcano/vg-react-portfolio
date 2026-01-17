@@ -1,5 +1,4 @@
-import React from 'react'
-import profilePic from '../../assets/images/profilePic.jpg'
+import './about.css'
 
 // Skillset icons
 import { IconContext } from 'react-icons'
@@ -14,19 +13,24 @@ import { DiGit } from 'react-icons/di'
 const About = () => {
     return (
         <section className="about">
-            <div className="about-pic">
-                <div>
-                    <h2 class="headline">Hi! I'm Valerie.</h2>
-                    <h3>I'm a <span class="emph">web developer</span>, <span class="emph">technical communicator</span>, and <span class="emph">project manager.</span></h3>
-                </div>
-                <img src={profilePic} alt="Valerie headshot" />
-            </div>
             <div>
-                
-                <hr/>
-                <p>I have 16 years of experience in tech, finding success first as a technical writer and then as a software project manager. Software has been the focus of my career for over a decade, and pursuing my passion in web development is the natural next step in my career.</p>
+                <h2 className="headline">Hi! I'm Valerie.</h2>
+                <p>I'm an <span className="emph">engineering-focused technical writer</span> with hands-on software development experience.</p>
+                <p>
+                    I spent the first seven years of my career as a technical writer, writing about everything from application and driver software to internal tools and engineering processes. 
+                    Across roles, my focus has always been to improve user experience.
+                </p>
+                <p>
+                    In conjunction with my development work, I have continued to evolve my technical writing skill set, including:                    <ul>
+                        <li>Designing and implementing a <span className="emph">YAML validation tool in Python</span> to improve configuration correctness and consistency.</li>
+                        <li>Authoring <span className="emph">Markdown-based</span> specifications and internal documentation used by engineering teams.</li>
+                        <li>Documenting a <span className="emph">REST API using OpenAPI</span> and publishing a <span className="epmh">docs-as-code site with Docusaurus</span>.</li>
+                    </ul>
+                </p>
+                <p>
+                    I am seeking engineering-focused technical writing roles where strong collaboration, modern tooling, and continuous improvement are core to how teams work.                </p>
             </div>
-            <div style={{textAlign: 'center', marginTop: 20}}>
+            <div style={{textAlign: 'center', marginTop: 30}}>
                 <IconContext.Provider value={{ size: '3em '}} >
                     <DiCss3 />
                     <DiHtml5 />

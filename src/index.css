@@ -1,11 +1,11 @@
 :root {
-  --primary-color: #344e41;
-  --secondary-color: #3a5a40;
-  --tertiary-color: #588157;
+  --primary-color:rgb(255, 240, 240);
+  --secondary-color: rgb(255, 240, 240);
+  --tertiary-color: rgb(255, 240, 240);
   --highlight: #a3b18a;
   --bright: #dad7cd;
   --white: #ffffff;
-  --primary-rgb: rgb(52 78 65);
+  --primary-rgb: rgb(255, 240, 240);
 }
 
 body {
@@ -16,9 +16,8 @@ body {
   width: 100%;
   margin: 0;
   padding: 0;
-  background-color: var(--bright);
-  background: linear-gradient(305deg, var(--bright) 0 50%, var(--highlight) 50% 100%);
-  background-repeat: no-repeat;
+  color: rgb(255,240,240);
+  background: linear-gradient(180deg, #222 0%,#111 100%);
 }
 
 hr {
@@ -27,7 +26,6 @@ hr {
 
 a {
   color: var(--secondary-color);
-  text-decoration: none;
 }
 
 /* Generic Heading Styles */
@@ -61,22 +59,6 @@ h3 {
 
 .emph {
   color: var(--tertiary-color);
-}
-
-/* Header Styles */
-header {
-  color: var(--primary-color);
-  width: 90%;
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-end;
-  align-items: center;
-  /* padding: 15px 0; */
-  margin: 20px;
-}
-
-.mobile-heading {
-  display: none;
 }
 
 
@@ -146,15 +128,6 @@ nav ul li a:hover {
   padding-top: 15px;
   padding-bottom: 25px;
   margin: 0 auto;
-}
-
-/* ABOUT styles */
-.about-content-wrapper {
-  background-attachment: fixed;
-  background-position: 80%;
-  /* min-height: calc(100vh - 304px);
-  overflow: hidden; */
-
 }
 
 .about {

@@ -10,8 +10,8 @@ const MobileNav = () => {
     const buttonStyle = {
         background: 'none',
         border: 'none',
-        color: '#344e41',
-        marginTop: 20,
+        color: 'rgb(255, 240, 240)',
+        marginTop: 0,
         marginRight: 10
     }
 
@@ -39,10 +39,10 @@ const MobileNav = () => {
                     onKeyDown={() => setState(false)}
                     >
                     <ul style={mobileNav}>
-                        {/* TODO: Pull this list into a separate component to be shared between desktop nav and mobile nav */}
                         <li style={liStyle}><NavLink to ="/about">about</NavLink></li>
                         <li style={liStyle}><NavLink to="/portfolio">portfolio</NavLink></li>
                         {/* <li style={liStyle}><NavLink to="/resume">resume</NavLink></li> */}
+                        <li style={liStyle}><NavLink to="/writing">writing samples</NavLink></li>
                         <li style={liStyle}><NavLink to="/contact">contact</NavLink></li>
                     </ul> 
                 </Box>

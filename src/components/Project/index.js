@@ -1,32 +1,33 @@
-import React from 'react'
-import Box from '@mui/material/Box'
+import { Card, CardContent } from '@mui/material'
+import LaunchIcon from '@mui/icons-material/Launch';
+import { NavLink } from 'react-router-dom';
+import './project.css'
 
 const Project = ({projectItem}) => {
-    const {name, githubUrl, deployedUrl, technologies, imgName} = projectItem
+    const {name, externalLink, internalLink, isExternalLink, description} = projectItem
+
+    const showExternalIcon = isExternalLink === true;
 
     return (
-        // Wrapping each project in a box? Maybe
-        <Box className='proj-container'>
-                <img className="portfolio-img" src={require(`../../assets/images/${imgName}`)} alt="screenshot of project" />
-                <div className="project-wrapper">
+        <Card>
+            <CardContent className="card-link">
+                <div>
                     <h3>{name}</h3>
-                    {/* <p>{description}</p> */}
-                    {/* Map through the technologies used */}
-                    <ul className="tech-ul">
-                            {technologies.map((tech) => (
-                                <li className="tech-li" key={tech}>{tech}</li>
-                            ))}
-                        </ul>
-                    <div className="project-link-wrapper">
-                        <span className="project-links"><a href={githubUrl} target="_blank" rel="noreferrer">GitHub</a></span>
-                        {deployedUrl && <span className="project-links"><a href={deployedUrl} target="_blank" rel="noreferrer">Deployed</a></span>}
-                    </div>
-                    
-                    <div>
-
-                    </div>
+                    <p>{description}</p>
                 </div>
-        </Box>
+                <div>
+                {showExternalIcon ?
+                    <a href={externalLink} target="_blank" rel="noreferrer">
+                        Details <LaunchIcon fontSize='xsmall'/>
+                    </a>
+                    :
+                    <NavLink to={internalLink}>
+                        Details
+                    </NavLink>
+                    }
+                </div>
+            </CardContent>
+        </Card>
 
     )
 }
