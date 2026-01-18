@@ -92,31 +92,24 @@ ul li a {
   display: block;
 }
 
-nav ul li a {
-  color: var(--primary-color);
-  padding: 10px;
-  transition: all 750ms ease-out 10ms;
-  border-radius: 8px;
-}
 
 
 ul li a:hover, .project-links:hover {
-  color: var(--bright); 
-  /* animation-duration: 1s;
-  animation-fill-mode: forwards;
-  animation-name: fadein; */
+  color: black; 
+  text-decoration-thickness: 1px;
+  text-underline-offset: 3px;
+  text-decoration: underline;
 }
 
 nav ul li a:hover {
   background-color: var(--primary-color);
-  color: var(--bright);
+  color: black;
 }
 
 .active {
-  background-color: var(--secondary-color);
-  border-top-right-radius: 15px;
-  border-bottom-left-radius: 15px;
-  color: var(--bright)
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-decoration-color: black;
 }
 
 /* main content section styles */

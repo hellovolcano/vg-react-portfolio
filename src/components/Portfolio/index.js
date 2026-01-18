@@ -5,8 +5,8 @@ const Portfolio = () => {
     const [projects] = useState([
         {
             name: 'Hippohonk',
+            internalLink: 'hippohonk',
             externalLink: 'https://github.com/hellovolcano/hippohonk',
-            isExternalLink: true,
             description: 'Hippohonk is dedicated to finding and rating showcasing bands at SXSW Austin. Originally created with Ruby on Rails in 2011 and ported to PERN.',
             technologies: ['Postgres','Node.js','React.js','Material-UI','JavaScript','HTML','CSS', 'Express.js'],
             imgName: 'hippohonk.png'
@@ -14,7 +14,7 @@ const Portfolio = () => {
         {
             name: 'Find A Movie',
             internalLink: 'find-a-movie',
-            isExternalLink: false,
+            externalLink: 'https://find-a-movie-5e830608c35b.herokuapp.com/',
             description: 'Quickly search for the movie you want to watch amonst multiple popular streaming services.',
             technologies: ['HTML', 'CSS', 'JavaScript'],
             imgName: 'iStreamuStream.png'
@@ -22,8 +22,8 @@ const Portfolio = () => {
         {
             name: 'Our 1907 House',
             externalLink: 'https://www.our1907house.com',
-            isExternalLink: true,
-            description: 'CMS-style blog that leverages Handlebars as a template engine, and Sequelize as an ORM.',
+            internalLink: 'our-1907-house',
+            description: 'Frontend only website for hosting information about a century home.',
             technologies: ['HTML', 'CSS','JavaScript','Node.js','Handlebars','MySQL'],
             imgName: 'mvc-blog.png'
         },

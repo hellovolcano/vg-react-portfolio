@@ -1,33 +1,20 @@
-import { Card, CardContent } from '@mui/material'
-import LaunchIcon from '@mui/icons-material/Launch';
-import { NavLink } from 'react-router-dom';
+import LinkIcon from '@mui/icons-material/Link';
 import './project.css'
 
 const Project = ({projectItem}) => {
-    const {name, externalLink, internalLink, isExternalLink, description} = projectItem
-
-    const showExternalIcon = isExternalLink === true;
+    const {name, externalLink, description} = projectItem
 
     return (
-        <Card>
-            <CardContent className="card-link">
-                <div>
-                    <h3>{name}</h3>
-                    <p>{description}</p>
-                </div>
-                <div>
-                {showExternalIcon ?
-                    <a href={externalLink} target="_blank" rel="noreferrer">
-                        Details <LaunchIcon fontSize='xsmall'/>
-                    </a>
-                    :
-                    <NavLink to={internalLink}>
-                        Details
-                    </NavLink>
-                    }
-                </div>
-            </CardContent>
-        </Card>
+        <main>
+            <div className="template">
+                <a href={externalLink} target="_blank" rel="noreferrer">
+                    <h4>{name} <LinkIcon size="small" className="icon" /></h4>
+                </a>
+            </div>
+            <div className="details">
+                {description}
+            </div>
+        </main>
 
     )
 }

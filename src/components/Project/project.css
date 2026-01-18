@@ -1,5 +1,27 @@
-.card-link {
+body {
+    font-weight: 200;
+}
+
+.details {
+    margin-top: 5px;
+}
+
+h4 {
     display: flex;
-    justify-items: center;
-    justify-content: space-between;
+    margin-bottom: 10px;
+    align-items: bottom;
+    gap: 4;
+}
+
+h4 .icon {
+    margin-left: 5px;
+}
+
+a {
+    text-underline-offset: 3px;
+    text-decoration-color: darkslategray;
+}
+
+a:hover {
+    text-decoration: none;
 }

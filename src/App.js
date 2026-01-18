@@ -8,7 +8,6 @@ import Footer from '../src/components/Footer'
 import Home from '../src/components/Home'
 import { useEffect, useState} from 'react'
 import Writing from './components/Writing'
-import { FindAMovie } from './components/Portfolio/find-a-movie'
   
 function App() {
 
@@ -36,7 +35,6 @@ function App() {
               <Route path="/writing" element={<Writing />} />
               <Route path="resume" element={<Resume />} />
               <Route path="contact" element={<ContactForm />} />
-              <Route path="portfolio/find-a-movie" element={<FindAMovie />} />
             </Routes>
           
         </div>

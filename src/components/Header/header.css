@@ -5,13 +5,24 @@ h1 {
 /* Header Styles */
 header {
   color: var(--primary-color);
-  width: 100%;
+  max-width: 100%;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
   /* padding: 15px 0; */
   margin: 20px;
+}
+
+header a {
+  text-decoration: none;
+}
+
+header a:hover {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  text-decoration-color: darkslategray;
+  text-decoration-thickness: 1px;
 }
 
 .mobile-heading {

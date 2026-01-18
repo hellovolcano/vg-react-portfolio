@@ -29,23 +29,28 @@ const MobileNav = () => {
         <div>
             <button style={buttonStyle} onClick={() => setState(true)}><MenuIcon fontSize="large" /> </button>
             
-            <Drawer open={state} anchor={"top"} onClose={() => setState(false)}>
+            <Drawer open={state} anchor={"right"} onClose={() => setState(false)}>
+                
                 <Box
                     sx={{ 
                         width: "auto",
-                        backgroundColor: '#a3b18a' }}
+                        minWidth: "400px",
+                        height: "100%",
+                        backgroundColor: 'darkslategray' }}
                     role="presentation"
                     onClick={() => setState(false)}
                     onKeyDown={() => setState(false)}
+                    className="flex"
                     >
                     <ul style={mobileNav}>
                         <li style={liStyle}><NavLink to ="/about">about</NavLink></li>
                         <li style={liStyle}><NavLink to="/portfolio">portfolio</NavLink></li>
-                        {/* <li style={liStyle}><NavLink to="/resume">resume</NavLink></li> */}
                         <li style={liStyle}><NavLink to="/writing">writing samples</NavLink></li>
                         <li style={liStyle}><NavLink to="/contact">contact</NavLink></li>
-                    </ul> 
+                    </ul>
                 </Box>
+                    
+                
             </Drawer>
         </div>
         
