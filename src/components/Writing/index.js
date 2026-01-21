@@ -22,7 +22,7 @@ const Writing = () => {
 
                 Working with a Product Support Engineer, I authored a task-focused guide for NI-VISA to redirect users toward searching for existing drivers before building their own.
                 `,
-            demonstrates: ['Task-based documentation', 'Support-drive content']
+            demonstrates: ['Task-based documentation', 'Support-driven content']
         },
         {
             name: "NI System Configuration API Reference for LabWindows™/CVI™",
