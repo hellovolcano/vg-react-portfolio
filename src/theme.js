@@ -14,7 +14,7 @@ const theme = createTheme({
   typography: {
     // Default font for body text, buttons, etc.
     fontFamily: [
-      "Inter",
+      "source-sans-3-variable",
       "-apple-system",
       "BlinkMacSystemFont",
       '"Segoe UI"',

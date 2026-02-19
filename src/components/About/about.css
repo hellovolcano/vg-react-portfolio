@@ -9,4 +9,16 @@ hr {
 
 .emph {
     font-weight: 400;
+    color: black;
+}
+
+.headline {
+  text-transform: uppercase;
+  margin-bottom: 0px;
+  font-family: 'boiga-fill', sans-serif;
+  color: black;
+}
+
+.about {
+    color: black;
 }

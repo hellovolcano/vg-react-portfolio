@@ -5,18 +5,91 @@
     flex-wrap: nowrap;
     flex-direction: column;
     margin: 0 auto;
+    min-height: 100vh;
+}
+
+.big-name {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .container h1 {
-    font-size: 2rem;
+    font-size: 10rem;
     margin-bottom: 10px;
+    font-family: "boiga-outline", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    line-height: 7rem;
 }
 
-.navigation {
+.weirdo {
+    letter-spacing: 2.5rem;
+    padding: 10px;
+}
+
+.not-weirdo {
+    letter-spacing: normal;
+}
+
+.divider {
+    margin: 20px;
+}
+
+
+#weird-button {
+    border-radius: 50px;
+    padding: 30px 30px 25px 30px;
+    border: none;
+    color: black;
+    background-color: white;
+    opacity: 0;
+    cursor: pointer;
+}
+
+#weird-button.visible {
+    opacity: 1;
+    transition: opacity .75s ease-in-out;
+}
+
+/* Wrapper does the bounce (translateY) */
+.weird-button-wrap {
+  display: inline-block;
+  animation: bounce 2s ease infinite;
+  transform-origin: bottom;
+}
+
+/* Button does the hover scale + easing */
+#weird-button {
+  margin: 0 auto;
+  margin-top: 30px;
+  transition: transform 0.5s ease-in;
+}
+
+/* On hover: stop the wrapper animation + scale button */
+.weird-button-wrap:hover {
+  animation: none;
+}
+
+.weird-button-wrap:hover #weird-button {
+  transform: scale(1.4);
+}
+
+@keyframes bounce {
+  0%   { transform: translateY(0); }
+  30%  { transform: translateY(-5px); }
+  50%  { transform: translateY(0); }
+  100% { transform: translateY(0); }
+}
+
+.subheading {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    font-family: "source-sans-3-variable", sans-serif;
+    font-variation-settings: "wght" 900;
 }
 
 .navigation a {
@@ -33,10 +106,37 @@
   display: flex;
   align-items: center;     
   justify-content: center;
+  flex-direction: column;
+}
+
+.section {
+  background: white;
+  padding: 4rem 2rem;
+
+}
+
+.about {
+  
+  clip-path: polygon(
+    0% 5%,
+    100% 0%,
+    100% 95%,
+    0% 100%
+  );
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+}
+
+.web {
+  clip-path: polygon(
+    6% 10%,
+    97% 3%,
+    92% 95%,
+    2% 92%
+  );
 }
 
 @media screen and (min-width: 700px) {
-    .navigation {
+    .subheading {
         flex-direction: row;
         flex-wrap: nowrap;
     }

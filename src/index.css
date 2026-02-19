@@ -1,15 +1,16 @@
 :root {
-  --primary-color:rgb(255, 240, 240);
-  --secondary-color: rgb(255, 240, 240);
-  --tertiary-color: rgb(255, 240, 240);
+  --primary-color:rgb(0,0,0);
+  --secondary-color: rgb(0, 0, 0);
+  --tertiary-color: rgb(0, 0, 0);
   --highlight: #a3b18a;
   --bright: #dad7cd;
   --white: #ffffff;
-  --primary-rgb: rgb(255, 240, 240);
+  --primary-rgb: rgb(0,0,0);
 }
 
 body {
-  font-family: "Inter", serif;
+  font-family: "source-sans-3-variable", sans-serif;
+  font-variation-settings: "wght" 300;
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
@@ -17,7 +18,8 @@ body {
   margin: 0;
   padding: 0;
   color: rgb(255,240,240);
-  background: linear-gradient(180deg, #222 0%,#111 100%);
+  background-color: black;
+  transition: background-color 0.25s ease-in;
 }
 
 hr {
@@ -30,14 +32,14 @@ a {
 
 /* Generic Heading Styles */
 h1, h2, h3 {
-  font-family: "Josefin Sans", serif;
+  font-family: "boiga-fill", serif;
   font-optical-sizing: auto;
   font-weight: 300;
   font-style: normal;
 }
 
 h1 {
-  text-transform: uppercase;
+  text-transform: lowercase;
   font-kerning: auto;
 }
 
@@ -50,11 +52,6 @@ h3 {
   font-size: 36px;
   margin-top: 10px;
   margin-bottom: 10px;
-}
-
-.headline {
-  text-transform: uppercase;
-  margin-bottom: 0px;
 }
 
 .emph {
@@ -248,7 +245,7 @@ nav ul li a:hover {
 
 /* Contact Form */
 button {
-  font-family: 'Inter', sans-serif;
+  font-family: "source-sans-3-variable", sans-serif;
 }
 
 .contact {
