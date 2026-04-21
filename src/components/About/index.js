@@ -1,14 +1,5 @@
 import './about.css'
 
-// Skillset icons
-import { IconContext } from 'react-icons'
-import { DiDotnet, DiReact } from 'react-icons/di'
-import { DiJavascript1 } from 'react-icons/di'
-import { DiNodejs } from 'react-icons/di'
-import { DiHtml5 } from 'react-icons/di'
-import { DiCss3 } from 'react-icons/di'
-import { DiPython } from 'react-icons/di'
-import { DiGit } from 'react-icons/di'
 
 const About = () => {
     return (
