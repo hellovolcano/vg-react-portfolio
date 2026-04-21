@@ -1,4 +1,4 @@
-h1 {
+header h1 {
     color: white;
 }
 
@@ -21,10 +21,6 @@ header a {
 header a:hover {
   text-decoration: underline;
   text-underline-offset: 3px;
-  text-decoration-color: darkslategray;
+  text-decoration-color: #f7b733;
   text-decoration-thickness: 1px;
-}
-
-.mobile-heading {
-  display: none;
 }

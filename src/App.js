@@ -8,7 +8,14 @@ import Footer from '../src/components/Footer'
 import Home from '../src/components/Home'
 import { useEffect, useState} from 'react'
 import Writing from './components/Writing'
-  
+import JustFun from '../src/components/JustFun'
+
+function ScrollToTop() {
+  const { pathname } = useLocation();
+  useEffect(() => { window.scrollTo(0, 0); }, [pathname]);
+  return null;
+}
+
 function App() {
 
   const location = useLocation()
@@ -21,12 +28,11 @@ function App() {
 
 
   return (
-    <div className="tile-bg shimmer glossy">
-      {/* Adding one more wrapper to help push the footer */}
+    <div>
       <div className={isAbout ? ("about-content-wrapper") : ("body-wrapper")}>
         <Header />
-        {/* <div id="main-wrapper" className={isAbout ? ("about-content-wrapper") : ("main-content-wrapper")}> */}
         <div id="main-wrapper" className="main-content-wrapper">
+            <ScrollToTop />
             <Routes>
               <Route path="/" element={<Home />} />
               <Route path="/vg-react-portfolio" element={<Home />} />
@@ -35,6 +41,7 @@ function App() {
               <Route path="/writing" element={<Writing />} />
               <Route path="resume" element={<Resume />} />
               <Route path="contact" element={<ContactForm />} />
+              <Route path="/fun" element={<JustFun />} />
             </Routes>
           
         </div>

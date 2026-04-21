@@ -1,0 +1,24 @@
+.poly-card {
+  /* defaults */
+  --poly-clip: polygon(0% 2%, 99% 0%, 98% 98%, 0% 100%);
+  --poly-bg: #000;
+  --poly-width: fit-content;
+  --poly-rotate: 0deg;
+
+  position: relative;
+  display: block;
+  width: var(--poly-width);
+  padding: var(--poly-padding, 1rem 1.25rem);
+
+  background: var(--poly-bg);
+  border-left: 10px solid black;
+  cursor: pointer;
+
+  clip-path: var(--poly-clip);
+  -webkit-clip-path: var(--poly-clip);
+
+  transform: rotate(var(--poly-rotate));
+  overflow: visible;
+  z-index: 0;
+  isolation: isolate;
+}

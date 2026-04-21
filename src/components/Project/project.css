@@ -1,28 +1,24 @@
-body {
-    font-weight: 200;
-}
-
 .details {
     margin-top: 5px;
 }
 
-h4 {
+main h4 {
     display: flex;
     margin-bottom: 10px;
-    align-items: bottom;
-    gap: 4;
+    align-items: center;
+    gap: 4px;
 }
 
-h4 .icon {
+main h4 .icon {
     margin-left: 5px;
 }
 
-a {
+main a {
     text-underline-offset: 3px;
     text-decoration-color: black;
 }
 
-a:hover {
+main a:hover {
     text-decoration: none;
 }
 

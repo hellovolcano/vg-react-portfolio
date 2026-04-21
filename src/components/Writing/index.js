@@ -1,6 +1,11 @@
-import { useState } from "react"
+import { useState, useEffect } from "react"
 import { PortfolioGrid } from "../PortfolioGrid"
 const Writing = () => {
+    useEffect(() => {
+        document.body.style.backgroundColor = '#ff6b6b';
+        return () => { document.body.style.backgroundColor = ''; };
+    }, []);
+
     const [projects] = useState([
         {
             name: "Hippohonk Help",

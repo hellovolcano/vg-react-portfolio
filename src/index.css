@@ -19,7 +19,7 @@ body {
   padding: 0;
   color: rgb(255,240,240);
   background-color: black;
-  transition: background-color 0.25s ease-in;
+  transition: background-color 250ms linear;
 }
 
 hr {
@@ -56,51 +56,7 @@ h3 {
 
 .emph {
   color: var(--tertiary-color);
-}
-
-
-/* Navigation Styles */
-nav {
-  display: flex;
-  justify-content: flex-start;
-  color: var(--bright);
-  padding-top: 15px;
-  flex-wrap: wrap;
-}
-
-nav ul {
-  margin: 10px 20px 10px 20px;
-  display: flex;
-  flex-wrap: wrap;
-}
-
-nav ul li {
-  display: inline;
-  list-style-type: none;
-  /* flex-basis: 200px; */
-  padding: 15px 10px;
-  opacity: 100%;
-}
-
-ul li a {
-  text-decoration: none;
-  opacity: 100%;
-  padding: 10px;
-  display: block;
-}
-
-
-
-ul li a:hover, .project-links:hover {
-  color: black; 
-  text-decoration-thickness: 1px;
-  text-underline-offset: 3px;
-  text-decoration: underline;
-}
-
-nav ul li a:hover {
-  background-color: var(--primary-color);
-  color: black;
+  font-weight: 400;
 }
 
 .active {
@@ -112,104 +68,24 @@ nav ul li a:hover {
 /* main content section styles */
 .main-content-wrapper {
   width: 85%;
-}
-
-.main-content-wrapper {
   padding-top: 15px;
   padding-bottom: 25px;
   margin: 0 auto;
 }
 
-.about {
-  color: var(--primary-color);
-  padding: 25px 50px;
-  min-height: 100%;
-  height: 100%;
-}
-
-.about-pic {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap-reverse;
-}
-
-.about-pic img {
-  border: 1px solid var(--secondary-color);
-  border-radius: 50%;
-}
-
-.about-pic div {
-  text-align: center;
-}
-
-.proj-container {
-  position: relative;
-  width: 100%;
-  max-height: 400px;
-  overflow: hidden;
-  position: relative;
-}
-
-/* Portfolio Component Styles */
-.portfolio-img {
-  width: 100%;
-  height: 100%;
-  object-fit: fill;
-  filter: drop-shadow(var(--primary-color) 2px 2px 2px);
-  opacity: 1;
-  display: block;
-  height: auto;
-  transition: .5s ease;
-  backface-visibility: hidden;
-}
-
-/* .portfolio-img:hover {
-  transform: scale(1.1);
-} */
-
-/* Project Component Styles */
-.project-wrapper {
-  transition: .5s ease;
-  opacity: 0;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  width: 100%;
-  height: 100%;
-  color: var(--primary-color);
-  text-align: center;
-}
-
-.proj-container:hover .portfolio-img {
-  opacity: 0.2;
-  transform: scale(1.03);
-}
-
-.proj-container:hover .project-wrapper {
-  opacity: 1;
-}
-
-.tech-ul, .skills-ul {
+.skills-ul {
   display: flex;
   flex-wrap: wrap;
   margin: 0px;
-  justify-content: center;
+  justify-content: left;
   padding-inline-start: 0;
 }
 
-.tech-li, .skills-li {
+.skills-li {
   display: inline;
   list-style-type: none;
-  /* flex-basis: 100px; */
   padding: 5px 8px;
   font-weight: 600;
-  
-}
-
-.project-links, .skills-li {
-  padding: 5px 8px;
   margin: 3px;
   background-color: var(--secondary-color);
   border-top-right-radius: 15px;
@@ -217,30 +93,9 @@ nav ul li a:hover {
   color: var(--bright);
 }
 
-.project-links a {
-  color: var(--bright);
-}
-
-/* adding .project-links a:hover up to nav ul li a:hover */
-
-.project-link-wrapper {
-  display: flex;
-  justify-content: center;
-}
-
-.project-links a {
-  color: var(--bright)
-}
-
 /* Resume Section */
-
 .resume h2, .resume h3 {
   color: var(--primary-color)
-}
-
-
-.skills-ul {
-  justify-content: left;
 }
 
 /* Contact Form */
@@ -248,18 +103,7 @@ button {
   font-family: "source-sans-3-variable", sans-serif;
 }
 
-.contact {
-  padding: 25px;
-  border-radius: 8px;
-}
-
-.contact h2 {
-  color: var(--primary-color);
-  margin-top: 15px;
-}
-
 /* Styles for the footer */
-
 footer {
   width: 100%;
   padding: 30px 0;
@@ -276,57 +120,14 @@ footer {
   color: var(--secondary-color);
 }
 
-/* This generates the height of the remainder of the content (minus the footer's
-set height to ensure the footer is pushed to the bottom of the screen */
 .body-wrapper, .about-content-wrapper {
   min-height: calc(100vh - 128px);
 }
 
-
 @media screen and (min-width: 900px) {
-  .about-pic {
-    flex-direction: row;
-    justify-content: space-between;
-    flex-wrap: nowrap;
-  }
-
-  .about-pic div {
-    text-align: left;
-  }
-
-  .about-pic img {
-    margin-right: 100px;
-    margin-bottom: 20px;
-  }
-
   header {
     flex-direction: row;
     justify-content: flex-end;
     align-items: center;
-  }
-
-  .mobile-heading {
-    display: inline;
-  }
-
-  .proj-container {
-    position: relative;
-    width: 100%;
-    height: 200px;
-    overflow: hidden;
-    position: relative;
-  }
-  
-  /* Portfolio Component Styles */
-  .portfolio-img {
-    width: 100%;
-    max-height: 100%;
-    object-fit: fill;
-    filter: drop-shadow(var(--primary-color) 2px 2px 2px);
-    opacity: 1;
-    display: block;
-    height: auto;
-    transition: .5s ease;
-    backface-visibility: hidden;
   }
 }

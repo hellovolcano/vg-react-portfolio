@@ -3,58 +3,38 @@ import { NavLink } from 'react-router-dom'
 import Drawer from '@mui/material/Drawer'
 import Box from '@mui/material/Box'
 import MenuIcon from '@mui/icons-material/Menu';
+import './mobilenav.css'
 
 const MobileNav = () => {
     const [state, setState] = useState(false)
 
-    const buttonStyle = {
-        background: 'none',
-        border: 'none',
-        color: 'rgb(255, 240, 240)',
-        marginTop: 0,
-        marginRight: 10
-    }
-
-    const liStyle = {
-        listStyleType: 'none',
-        padding: 10,
-        textTransform: 'uppercase'
-    }
-
-    const mobileNav = {
-        paddingInlineStart: 0
-    }
-
     return(
         <div>
-            <button style={buttonStyle} onClick={() => setState(true)}><MenuIcon fontSize="large" /> </button>
-            
+            <button className="mobile-nav-toggle" onClick={() => setState(true)}>
+                <MenuIcon fontSize="large" />
+            </button>
+
             <Drawer open={state} anchor={"right"} onClose={() => setState(false)}>
-                
                 <Box
-                    sx={{ 
-                        width: "auto",
-                        minWidth: "400px",
+                    sx={{
+                        width: "90vw",
+                        maxWidth: "420px",
                         height: "100%",
-                        backgroundColor: 'darkslategray' }}
+                        backgroundColor: '#0d0d0d',
+                    }}
                     role="presentation"
                     onClick={() => setState(false)}
                     onKeyDown={() => setState(false)}
-                    className="flex"
-                    >
-                    <ul style={mobileNav}>
-                        <li style={liStyle}><NavLink to ="/about">about</NavLink></li>
-                        <li style={liStyle}><NavLink to="/portfolio">portfolio</NavLink></li>
-                        <li style={liStyle}><NavLink to="/writing">writing samples</NavLink></li>
-                        <li style={liStyle}><NavLink to="/contact">contact</NavLink></li>
+                >
+                    <ul className="mobile-nav-list">
+                        <li className="mobile-nav-item"><NavLink to="/portfolio">portfolio</NavLink></li>
+                        <li className="mobile-nav-item"><NavLink to="/writing">writing samples</NavLink></li>
+                        <li className="mobile-nav-item"><NavLink to="/fun">just fun</NavLink></li>
+                        <li className="mobile-nav-item"><NavLink to="/contact">contact</NavLink></li>
                     </ul>
                 </Box>
-                    
-                
             </Drawer>
         </div>
-        
-
     )
 }
 
