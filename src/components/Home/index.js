@@ -274,7 +274,7 @@ const Home = () => {
           onClick={() => navigate("/writing")}
           style={{ "--poly-padding": "4rem 5rem" }}
         >
-          <h1>UX</h1>
+          <h1>Technical Writing</h1>
           <p className="card-summary">technical writing samples</p>
         </PolyCard>
 
